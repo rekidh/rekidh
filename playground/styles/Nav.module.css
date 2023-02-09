@@ -1,0 +1,38 @@
+.nav{
+   border: 1px solid red;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: auto 5em;
+   font-weight: 800;
+   font-size: large;
+}
+.d_flex{
+   display: flex;
+}
+.search{
+   margin: 2em;
+}
+
+.burger{
+   display: flex;
+   flex-direction: column ;
+   justify-content: center;
+   background-color: blue;
+   transform: rotateY(-180deg);
+}
+.burger_items{
+   height: 5px;
+   border-radius: 3px;
+   background-color: black;
+   margin: 1px;
+}
+.burger_items:first-child{
+   width: 15px;
+}
+.burger_items:nth-child(2){
+   width: 20px;
+}
+.burger_items:nth-child(3){
+   width: 30px;
+}
