@@ -1,0 +1,18 @@
+import Button from '../atomic/Button/Button'
+import style from './section3.module.css'
+
+export default function Section3() {
+  return (
+   <div className={style.section3}>
+   <div className={style.head}>
+      <h1>Find My Work</h1>
+      <div className={style.container_btn}>
+         <Button>All</Button>
+         <Button>Design</Button>
+         <Button>Code</Button>
+      </div>
+      <div className={style.bg_circle}></div>
+   </div>
+   </div>
+  )
+}

@@ -1,0 +1,73 @@
+.section{
+   border-radius: 60px 60px 0px 0px;
+   background-color: #333333;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+}
+.section>h2{
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 48px;
+   text-align: center;
+   color: #FFFFFF;
+   margin: 2em auto;
+}
+.card{
+   color: #FFFFFF;
+   width: 1040px;
+   height: 440px;
+   background-image:linear-gradient(180deg ,#00c0fd 0% ,#0056fd 100%);
+   border-radius: 40px;
+   margin: 2em auto;
+}
+.card>*{
+   margin: 41px 0 0 63px;
+}
+.title>p{
+   margin:9px auto;
+}
+.ceklist>li{
+   display: flex;
+   justify-items: center;
+   list-style: none;
+   margin: 11px auto;
+}
+.ceklist>li>svg{
+   margin: auto 11px;
+}
+.btn{
+   width: 145px;
+   height: 48px;
+   border-radius: 25px;
+   border: none;
+   margin-top: 50px;
+   background-color: #FFFFFF;
+}
+.bullet{
+   border: 1px solid red;
+   background-color: #0056fd;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+}
+.container{
+   display: flex;
+   flex-direction: column;
+}
+.container>h2{
+margin-left: 85%;
+}
+.dot{
+   width: 50px;
+   margin: 3em 3em 7em 3em ;
+   display: flex;
+   justify-content: space-between;
+}
+.dot>span{
+   background-color:#FFFFFF ;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+}

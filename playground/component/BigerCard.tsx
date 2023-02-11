@@ -1,7 +1,7 @@
 import { ReactNode } from "react"
 import Image from "next/image"
 import ImageReki from '../assets/images/reki.png'
-import Nav from "./Nav";
+import Nav from "./Nav/Nav";
 
 interface BigerCard{
    children:ReactNode,

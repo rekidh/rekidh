@@ -1,0 +1,32 @@
+.nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: auto 5em;
+
+}
+.logo{
+   font-weight: 800;
+   font-size: 24px;
+   line-height: 36px;
+}
+.nav_menu>ul{
+   display: flex;
+   -ms-flex-order: 0;
+}
+.nav_menu>ul>li{
+   list-style: none;
+   margin:0 2em;
+}
+.nav_menu>ul>li>a{
+   text-decoration: none;
+}
+.nav_button{
+   width: 139px;
+   height: 48px;
+   border-radius: 25px;
+   margin: auto;
+   border: none;
+   background-image: linear-gradient(180deg, #00C0FD 0%, #0056FD 100%);;
+}
+

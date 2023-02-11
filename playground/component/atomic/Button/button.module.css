@@ -1,0 +1,8 @@
+.btn{
+   width: 139px;
+   height: 48px;
+   border-radius: 25px;
+   border: none;
+   background-image: linear-gradient(180deg, #00C0FD 0%, #0056FD 100%);
+   color: #fff;
+}
