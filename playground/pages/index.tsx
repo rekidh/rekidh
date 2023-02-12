@@ -7,8 +7,10 @@ import Section3 from '@/component/Section3/Section3';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+
   return ( 
-    <>
+    < >
       <Nav/>
       <Section1/>
       <CarauselCard/>

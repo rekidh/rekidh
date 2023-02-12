@@ -7,9 +7,9 @@ export default function Section3() {
    <div className={style.head}>
       <h1>Find My Work</h1>
       <div className={style.container_btn}>
-         <Button>All</Button>
-         <Button>Design</Button>
-         <Button>Code</Button>
+         <Button model={'primary'} >All</Button>
+         <Button model={'secondary'}>Design</Button>
+         <Button model={'secondary'}>Code</Button>
       </div>
       <div className={style.bg_circle}></div>
    </div>
