@@ -1,4 +1,5 @@
 import Button from '../atomic/Button/Button'
+import Card from '../atomic/Card/Card'
 import style from './section3.module.css'
 
 export default function Section3() {
@@ -10,6 +11,17 @@ export default function Section3() {
          <Button model={'primary'} >All</Button>
          <Button model={'secondary'}>Design</Button>
          <Button model={'secondary'}>Code</Button>
+      </div>
+      <div className={style.card_container}>
+         <div className={style.rapper}>
+            <Card title='title'>Slug</Card>
+            <Card title='title'>Slug</Card>
+            <Card title='title'>Slug</Card>
+            <Card title='title'>Slug</Card>
+            <Card title='title'>Slug</Card>
+            <Card title='title'>Slug</Card>
+            <Card title='title'>Slug</Card>
+         </div>
       </div>
       <div className={style.bg_circle}></div>
    </div>

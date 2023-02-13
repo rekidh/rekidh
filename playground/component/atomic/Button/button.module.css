@@ -1,8 +1,10 @@
 .btn{
-   width: 139px;
-   height: 48px;
+   width: 103px;
+   height: 37px;
    border-radius: 25px;
    border: none;
+   background-color: #fff;
+   
 }
 .primary{
    width: 139px;
@@ -13,6 +15,18 @@
    color: #fff;
 }
 .secondary{
+   width: 130px;
+   height: 40px;
+   border-radius: 23px;
+   border: none;
+   background-color: #fff;
+}
+.secondary>span{
+   background: -webkit-linear-gradient(-90deg, #00C0FD 0%, #0056FD 100%);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+}
+.rapper{
    width: 139px;
    height: 48px;
    border-radius: 25px;
@@ -22,12 +36,3 @@
    align-items: center;
    justify-content: center;
 }
-.secondary>button{
-   border-radius: 23px;
-   height: 42px ;
-   width: 132px;
-   border: none;
-   background: #fff;
-
-}
-

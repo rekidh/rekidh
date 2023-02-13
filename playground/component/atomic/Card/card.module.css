@@ -1,0 +1,35 @@
+.container{
+   height: 370px;
+   border-radius: 20px;
+   width: 341px;
+   background-color: red;
+   display: flex;
+   flex-direction: column;
+   /* glassmorphism */
+   background: rgba(255, 255, 255, 0.2); /* make bg white and transparent whit opacity 0.2  */
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* box shadow must be added because the box transparent */
+   backdrop-filter: blur(5px); /*for make background blur*/
+   -webkit-backdrop-filter: blur(5px); /*for another browser*/
+}
+.container:hover{
+   background-image: linear-gradient(180deg, #FFB94A 0%, #F4693F 100%);
+}
+.container>h1{
+   margin: auto 21px;
+}
+.container_img{
+   margin:1em auto;
+   border-radius:15px 15px 0 0;
+   overflow: hidden;
+}
+.rapper_btn{
+   display: flex;
+   align-items: center;
+   margin-bottom: 1em;
+}
+.rapper_btn>div{
+   margin-left: 1.5em;
+}
+.rapper_btn>button{
+   margin-left: 11.5em;
+}
