@@ -42,7 +42,9 @@
 
 }
 .card_container>.rapper{
-   margin: 3em 5.2em;
+   /* margin: 3em 5.2em; */
+   justify-content: center;
+   align-items: center;
    display: flex;
    flex-wrap: wrap;
    gap: 5em;
