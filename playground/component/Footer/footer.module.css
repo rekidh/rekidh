@@ -1,0 +1,16 @@
+.c{
+   color: #FFF;
+   background: #333333;
+   border-radius: 60px 60px 0 0;
+}
+
+.rapper{
+   margin-top: -3.5em;
+   padding: 60px;
+   display: flex;
+   gap: 105px;
+}
+.rapper>ul>li{
+list-style: none;
+margin-top: 5px;
+}

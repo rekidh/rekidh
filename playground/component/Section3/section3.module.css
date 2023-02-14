@@ -29,10 +29,10 @@
 .bg_circle{
    top: 1600px;
    left: 250px;
-   z-index: -3;
+   z-index: -20;
    position: absolute;
-   width: 2547px;
-   height: 2547px;
+   width: 1247px;
+   height: 1247px;
    background-image: radial-gradient(42.06% 42.06% at 49.96% 41.94%, #00C0FD 0%, rgba(194, 200, 255, 0) 100%);
 }
 .card_container{
