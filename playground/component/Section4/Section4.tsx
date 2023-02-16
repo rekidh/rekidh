@@ -9,7 +9,7 @@ export default function Section4() {
       </div>
       <form action="" className={style.form}>
       <input type="text" />
-        <Button size={{x:100,y:50}}> Send</Button>
+        <Button model='' size={{x:100,y:50}}> Send</Button>
       </form>
     </div>
   )
