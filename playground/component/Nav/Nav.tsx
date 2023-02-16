@@ -13,7 +13,14 @@ export default function Nav(){
                <li><Link href='#project'>Project</Link> </li>
             </ul>
          </div>
+         <div className={style.container_btn}>
             <Button model="primary" size={{x:140,y:50}}> Let's Talk</Button>
+         </div>
+         <div className={style.hamburger_menu}>
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
       </nav>
    )
 }
