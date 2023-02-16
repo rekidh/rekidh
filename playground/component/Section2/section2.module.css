@@ -37,14 +37,6 @@
 .ceklist>li>img{
    margin: auto 11px;
 }
-.btn{
-   width: 145px;
-   height: 48px;
-   border-radius: 25px;
-   border: none;
-   margin-top: 50px;
-   background-color: #FFFFFF;
-}
 .bullet{
    border: 1px solid red;
    background-color: #0056fd;

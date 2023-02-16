@@ -18,11 +18,13 @@ export default function Card(props:Card) {
       </div>
       <h1>{props.title}</h1>
       <div className={style.rapper_btn}>
-         <div>
+         <div className={style.child}>
             {props.children}
          </div>
-         <Button model=''>See Details</Button>
+         <div className={style.btn_container}>
+            <Button model='' size={{x:120,y:40}}>See Details</Button>
+         </div>
       </div>
-    </div>
+    </div> 
   )
 }

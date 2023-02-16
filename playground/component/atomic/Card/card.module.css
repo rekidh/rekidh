@@ -1,7 +1,7 @@
 .container{
    height: 370px;
-   border-radius: 20px;
    width: 341px;
+   border-radius: 20px;
    background-color: red;
    display: flex;
    flex-direction: column;
@@ -16,6 +16,11 @@
 }
 .container>h1{
    margin: auto 21px;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 30px;
+   letter-spacing: 0em;
+   text-align: left;
 }
 .container_img{
    margin:1em auto;
@@ -27,9 +32,12 @@
    align-items: center;
    margin-bottom: 1em;
 }
-.rapper_btn>div{
+.child{
    margin-left: 1.5em;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
 }
-.rapper_btn>button{
-   margin-left: 11.5em;
+.btn_container{
+   margin-left: 8.5em;
 }

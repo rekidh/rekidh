@@ -2,9 +2,10 @@ import style from './section2.module.css'
 import cheklist from '../../assets/images/Vector.svg'
 import Link from 'next/link'
 import Image from 'next/image'
+import Button from '../atomic/Button/Button'
 function Section2() {
   return (
-    <div className={style.section}>
+    <div className={style.section}  id='work'>
         <h2>Working Experience</h2>
         <div className={style.card}>
           <div className={style.title}>
@@ -22,7 +23,7 @@ function Section2() {
               </li>
           </ul>
           <div className={style.container}>
-            <button className={style.btn}>See Detail</button>
+            <Button model='' size={{x:140,y:50}}>See Detail</Button>
             <h2>TecnoIT</h2>
           </div>
         </div>

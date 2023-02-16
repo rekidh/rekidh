@@ -1,33 +1,35 @@
 .text_hero{
    display: flex;
    justify-content: center;
-   margin-top: 36px;
 }
+
 .text_hero>h1>span{
 background: -webkit-linear-gradient(-90deg, #00C0FD 0%, #0056FD 100%);
 -webkit-text-fill-color: transparent;
 -webkit-background-clip: text;
 }
-.ellipse{
-   width: 1141px;
-   height: 1141px;
-   border-radius: 50%;
-   position: absolute;
-   top: 200px;
-   z-index: -1;
-   background-image: radial-gradient(42.06% 42.06% at 49.96% 41.94%, #00C0FD 0%, rgba(194, 200, 255, 0) 100%);
-}
 .text_paragraf{
    width: 541px;
    height: 108px;
    text-align: center;
+
 }
 .section_hero{
    display: flex;
    justify-content: center;
    flex-direction: column;
    align-items: center;
+   margin-top: 23px;
 }
 
 /* section 2 */
+.ellipse{
+   width: 1241px;
+   height: 1241px;
+   border-radius: 50%;
+   position: absolute;
+   top: 200px;
+   z-index: -1;
+   background-image: radial-gradient(42.06% 42.06% at 49.96% 41.94%, #00C0FD 0%, rgba(194, 200, 255, 0) 100%);
+}
 

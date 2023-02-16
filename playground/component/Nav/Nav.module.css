@@ -2,8 +2,7 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
-   margin: auto 5em;
-
+   margin: 34px 5em 50px;
 }
 .logo{
    font-weight: 800;
