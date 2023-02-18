@@ -6,7 +6,7 @@ export default function Section3() {
   return (
    <div className={style.section3} >
       
-      <div className={style.bg_circle}></div>
+      {/* <div className={style.bg_circle}></div> */}
       
       <div className={style.head} id='project'>
          <h1>Find My Work</h1>

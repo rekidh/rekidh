@@ -10,7 +10,7 @@
    background-image: linear-gradient(180deg, #00C0FD 0%, #0056FD 100%);
 }
 .rapper{
-   margin-top: 96px;
+   margin: 9em auto 0;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -19,14 +19,17 @@
    gap: 27px;
 }
 .form>input{
-   width: 480px;
-   height: 60px;
+   width: 50vw;
+   height: 3vw;
    margin-right: 28px;
    border: none;
    border-radius: 100px;
    background-color: #fff;
-   padding: 30px;
+   padding: 3em;
 }
-.form>input:focus{
-/* outline: none; */
+.form{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 3em;
+   align-items: center;
 }

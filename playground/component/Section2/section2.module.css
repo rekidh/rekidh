@@ -1,65 +1,56 @@
-.section{
-   border-radius: 60px 60px 0px 0px;
+.section_2{
    background-color: #333333;
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   justify-content: center;
-}
-.section>h2{
-   font-weight: 700;
-   font-size: 32px;
-   line-height: 48px;
-   text-align: center;
+   border-radius: 3em 3em 0 0 ;
+   margin-top: -5em;
    color: #FFFFFF;
-   margin: 2em auto;
-}
-.card{
-   color: #FFFFFF;
-   width: 1040px;
-   height: 440px;
-   background-image:linear-gradient(180deg ,#00c0fd 0% ,#0056fd 100%);
-   border-radius: 40px;
-   margin: 2em auto;
-}
-.card>*{
-   margin: 41px 0 0 63px;
-}
-.title>p{
-   margin:9px auto;
-}
-.ceklist>li{
    display: flex;
    justify-items: center;
-   list-style: none;
-   margin: 11px auto;
-}
-.ceklist>li>img{
-   margin: auto 11px;
-}
-.bullet{
-   border: 1px solid red;
-   background-color: #0056fd;
-   width: 20px;
-   height: 20px;
-   border-radius: 50%;
-}
-.container{
-   display: flex;
    flex-direction: column;
 }
-.container>h2{
-margin-left: 85%;
+
+.section_2>h1{
+   margin: 10vh auto 0;
+}
+.card_section_2 {
+   background-image:  linear-gradient(180deg, #00C0FD 0%, #0056FD 100%);
+   border-radius: 3em;
+   margin: 7vw 10vw;
+   padding-bottom: 5vh;
+}
+.card_title,.card_list,.card_footer{
+   margin: 7vh 10vw  ;
+}
+.card_list>li{
+   display: flex;
+   list-style: none;
+   margin-bottom: 2vh;
+}
+.card_list>li>img{
+   align-items: center;
+   margin-right: 1vw;
+}
+.card_footer>h1{
+   margin-left:80%;
+   display: flex;
+   flex-direction: column;   
+}
+.card_footer>h1:after{
+   content: ' ';
+   width: 10vw;
+   height: 1vh;
+   margin: -2vh -4vh  ;
+   background-color:rgba(255, 233, 37, 0.7);;
 }
 .dot{
-   width: 50px;
-   margin: 3em 3em 7em 3em ;
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
+   align-items: center;
+   padding-bottom:  15vh  ;
 }
 .dot>span{
-   background-color:#FFFFFF ;
-   width: 8px;
-   height: 8px;
+   width: 0.5em;
+   height: 0.5em;
+   margin: 0.3em;
    border-radius: 50%;
+   background-color: #FFFFFF;
 }

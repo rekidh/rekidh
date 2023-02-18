@@ -1,35 +1,49 @@
-.text_hero{
-   display: flex;
-   justify-content: center;
+@media screen and (max-width:750px){
+   
+   .container_section_1{
+      height: 40%;
+      overflow: hidden;
+   }
 }
 
-.text_hero>h1>span{
-background: -webkit-linear-gradient(-90deg, #00C0FD 0%, #0056FD 100%);
--webkit-text-fill-color: transparent;
--webkit-background-clip: text;
-}
-.text_paragraf{
-   width: 541px;
-   height: 108px;
-   text-align: center;
+.container_section_1{
+   height: 45em;
+   overflow: hidden;
+} 
 
-}
-.section_hero{
+.image_rapper,.text_hero{
    display: flex;
    justify-content: center;
    flex-direction: column;
    align-items: center;
-   margin-top: 23px;
+}
+.text_hero{
+   gap: 4vh;
+}
+
+.text_hero>p{
+   width: 70vw;
+   height: 7em;
+   text-align: center;
+}
+.text_hero>h1>span{
+   background: -webkit-linear-gradient(-90deg, #00C0FD 0%, #0056FD 100%);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
 }
 
 /* section 2 */
-.ellipse{
-   width: 1241px;
-   height: 1241px;
+.circle{
+   display: flex;
+   justify-content: center;
+   width: 90em;
+   height: 90em;
+   margin-top: -5em;
    border-radius: 50%;
-   position: absolute;
-   top: 200px;
-   z-index: -1;
+   z-index: -2;
    background-image: radial-gradient(42.06% 42.06% at 49.96% 41.94%, #00C0FD 0%, rgba(194, 200, 255, 0) 100%);
+}
+.circle>img{
+   margin-top: 5em;
 }
 

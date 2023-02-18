@@ -5,14 +5,18 @@ import Image from 'next/image'
 import Button from '../atomic/Button/Button'
 function Section2() {
   return (
-    <div className={style.section}  id='work'>
-        <h2>Working Experience</h2>
-        <div className={style.card}>
-          <div className={style.title}>
-              <h1>User Interface Designer Intern</h1>
-              <p>January - March 2019</p>
+    <div className={style.section_2}  id='work'>
+
+        <h1>Working Experience</h1>
+
+        <div className={style.card_section_2}>
+          
+          <div className={style.card_title}>
+            <h1>User Interface Designer Intern</h1>
+            <p>January - March 2019</p>
           </div>
-          <ul className={style.ceklist}>
+        
+          <ul className={style.card_list}>
               <li>
                 <Image src={cheklist} width={22} height={22} alt=""/>
                 <Link href='/' />Designed the APPSO (Aplikasi Pembayaran Sekolah Online) website page
@@ -22,11 +26,13 @@ function Section2() {
                 <Link href='/' />Successfully made an animated video to introduce appso.id products
               </li>
           </ul>
-          <div className={style.container}>
+
+          <div className={style.card_footer}>
             <Button model='' size={{x:140,y:50}}>See Detail</Button>
-            <h2>TecnoIT</h2>
+            <h1>TecnoIT</h1>
           </div>
         </div>
+
         <div className={style.dot}>
           <span></span>
           <span></span>
