@@ -2,13 +2,15 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
-   margin: 1em 3em 3vh;
+   margin: 1em 3em 3em;
 }
 .hamburger_menu{
    display: none;
 }
 @media screen and (max-width: 768px) {
-   
+   .nav{
+      margin: 1em ;
+   }
    .hamburger_menu{
    display: flex;
    justify-content: center;

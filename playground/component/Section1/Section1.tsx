@@ -1,7 +1,9 @@
 import style from './Section1.module.css'
 import Image from "next/image"
 import imgReki from '../../assets/images/reki.png'
+
 export default function Section1() {
+
   return (
    <div className={style.container_section_1}>
 

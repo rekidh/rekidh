@@ -4,6 +4,10 @@
       height: 40%;
       overflow: hidden;
    }
+   .text_hero>p{
+   width: 70vw;
+   height: 7em;
+   }
 }
 
 .container_section_1{
@@ -19,11 +23,14 @@
 }
 .text_hero{
    gap: 4vh;
+   margin:  0 3em;
+}
+.text_hero>h1{
+ text-align: center;
 }
 
 .text_hero>p{
-   width: 70vw;
-   height: 7em;
+   margin: auto 25vw;
    text-align: center;
 }
 .text_hero>h1>span{
@@ -44,6 +51,6 @@
    background-image: radial-gradient(42.06% 42.06% at 49.96% 41.94%, #00C0FD 0%, rgba(194, 200, 255, 0) 100%);
 }
 .circle>img{
-   margin-top: 5em;
+   margin-top: 18vh;
 }
 

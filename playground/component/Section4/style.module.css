@@ -1,35 +1,31 @@
-.section_header{
-   z-index: 20;
-   height: 591px;
-   border-radius: 60px 60px 0 0;
-   margin-top: 91px;
+.container,.rapper{
    display: flex;
    flex-direction: column;
    align-items: center;
-   gap: 57px;
+   gap: 5vh;
+   color: #fff;
+}
+.container{
+   border-radius: 60px 60px 0 0;
+   margin-top: -3em;
+   height: 35em;
    background-image: linear-gradient(180deg, #00C0FD 0%, #0056FD 100%);
 }
-.rapper{
-   margin: 9em auto 0;
-   display: flex;
+.rapper,.form{
+   margin-top: 10vh ;
+}
+.form{
    align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   color: #fff;
-   gap: 27px;
 }
 .form>input{
    width: 50vw;
-   height: 3vw;
+   height: 3em;
    margin-right: 28px;
    border: none;
    border-radius: 100px;
    background-color: #fff;
-   padding: 3em;
+   padding: 2.5em;
 }
-.form{
-   display: flex;
-   flex-wrap: wrap;
-   gap: 3em;
-   align-items: center;
+.form>input:focus{
+   outline: none;
 }
