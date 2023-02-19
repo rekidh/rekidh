@@ -1,10 +1,9 @@
-.section3,.header{
+.section3,.header,.container_card{
    display: flex;
    flex-direction: column;
 
 }
 .section3{
-   overflow: hidden;
    justify-content: center;
    margin-top: -3em;
    background-color: #FFFFFF;
@@ -25,8 +24,6 @@
 }
 .container_card{
    margin-top: 5em;
-   display: flex;
-   flex-direction: column;
    align-items: center ;
    gap: 3.5em;
 }
@@ -43,9 +40,9 @@
    background-image:  radial-gradient(42.06% 42.06% at 49.96% 41.94%, #00C0FD 0%, rgba(194, 200, 255, 0) 100%)
 }
 @media screen and (max-width:768px) {
-   .container_card{
+   /* .container_card{
         flex-direction: row;
         overflow: scroll;
-   }
+   } */
    
 }

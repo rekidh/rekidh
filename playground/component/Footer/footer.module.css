@@ -8,7 +8,8 @@
 .rapper{
    padding: 60px;
    display: flex;
-   gap: 5em;
+   
+   gap: 2em;
 }
 .rapper>ul>li{
 list-style: none;

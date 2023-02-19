@@ -13,7 +13,7 @@ export default function Section3() {
             <Button model={'secondary'} size={{x:140,y:50}}>Design</Button>
             <Button model={'secondary'} size={{x:140,y:50}}>Code</Button>
          </div>
-      </div>
+      </div> 
 
       <div className={style.container_card}>
          <div className={style.rapper}>

@@ -1,12 +1,18 @@
 @media screen and (max-width:750px){
    
    .container_section_1{
-      height: 40%;
+      /* height: 40%; */
       overflow: hidden;
    }
+
    .text_hero>p{
    width: 70vw;
    height: 7em;
+   }
+   .text_hero>h1{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
    }
 }
 
@@ -41,16 +47,18 @@
 
 /* section 2 */
 .circle{
-   display: flex;
-   justify-content: center;
    width: 90em;
    height: 90em;
-   margin-top: -5em;
+   margin-top: -10vh;
    border-radius: 50%;
    z-index: -2;
    background-image: radial-gradient(42.06% 42.06% at 49.96% 41.94%, #00C0FD 0%, rgba(194, 200, 255, 0) 100%);
 }
-.circle>img{
-   margin-top: 18vh;
+.image_rapper>img{
+   position: absolute;
+   top: 23em;
+   z-index: -1;
+   width: 20em;
+   height: 25em;
 }
 

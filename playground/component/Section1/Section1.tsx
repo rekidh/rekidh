@@ -13,9 +13,8 @@ export default function Section1() {
       </div>
 
       <div className={style.image_rapper}>
-        <div className={style.circle} >
-          <Image width={400} height={480} src={imgReki} alt='reki-image'/>
-        </div>
+        <div className={style.circle} ></div>
+          <Image  src={imgReki} alt='reki-image'/>
       </div>
       
    </div>
