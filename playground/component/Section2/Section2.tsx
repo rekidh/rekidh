@@ -1,9 +1,9 @@
 import style from './section2.module.css'
 import cheklist from '../../assets/images/Vector.svg'
-import Link from 'next/link'
 import Image from 'next/image'
 import Button from '../atomic/Button/Button'
 import { useEffect,useState } from 'react'
+import axios from 'axios'
 function Section2() {
   const [data, setData] = useState(
       
@@ -14,9 +14,10 @@ function Section2() {
       
     )
   useEffect( () => {
-     fetch('http://localhost:3000/api/working').then(res => res.json()).then(data => {
-      setData(data)
-     })
+     axios.get('https://rekidh-rekidh.vercel.app/api/working').then(res => console.log(res))
+    //  .then(data => {
+    //   setData(data)
+    //  })
      
   },[])
 
