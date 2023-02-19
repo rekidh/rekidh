@@ -11,14 +11,13 @@ function Section2() {
         starDate:String,
         point:[String,String,String,String,String],
         link:String }
-      
     )
-  useEffect( () => {
-     axios.get('https://rekidh-rekidh.vercel.app/api/working').then(res => console.log(res))
-    //  .then(data => {
-    //   setData(data)
-    //  })
-     
+  const getData = async () => {
+    await axios.get('https://rekidh-rekidh.vercel.app/api/working').then(res => setData(res.data))
+  }
+  
+  useEffect(()  => {
+    getData()
   },[])
 
   return (
