@@ -3,28 +3,43 @@ import cheklist from '../../assets/images/Vector.svg'
 import Link from 'next/link'
 import Image from 'next/image'
 import Button from '../atomic/Button/Button'
+import { useEffect,useState } from 'react'
 function Section2() {
+  const [data, setData] = useState(
+      
+        {jobTitle :String,
+        starDate:String,
+        point:[String,String,String,String,String],
+        link:String }
+      
+    )
+  useEffect( () => {
+     fetch('http://localhost:3000/api/working').then(res => res.json()).then(data => {
+      setData(data)
+     })
+     
+  },[])
+
   return (
     <div className={style.section_2}  id='work'>
-
         <h1>Working Experience</h1>
-
         <div className={style.card_section_2}>
           
           <div className={style.card_title}>
-            <h1>User Interface Designer Intern</h1>
-            <p>January - March 2019</p>
+            <h1>{data.jobTitle.toString()}</h1>
+            <p>{data.starDate.toString()}</p>
           </div>
-        
           <ul className={style.card_list}>
-              <li>
-                <Image src={cheklist} width={22} height={22} alt=""/>
-                <Link href='/' />Designed the APPSO (Aplikasi Pembayaran Sekolah Online) website page
-              </li>
-              <li>
-                <Image src={cheklist} width={22} height={22} alt=""/>
-                <Link href='/' />Successfully made an animated video to introduce appso.id products
-              </li>
+            {
+              data.point.map((item,index) => {
+                  return (
+                    <li key={index}>
+                      <Image src={cheklist} width={22} height={22} alt=""/>
+                      <p>{item.toString()}</p>
+                    </li>
+                  )
+              })
+            }
           </ul>
 
           <div className={style.card_footer}>

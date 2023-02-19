@@ -14,7 +14,7 @@ export default function Section1() {
 
       <div className={style.image_rapper}>
         <div className={style.circle} ></div>
-          <Image  src={imgReki} alt='reki-image'/>
+        <Image  src={imgReki} alt='reki-image'/>
       </div>
       
    </div>
