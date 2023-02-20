@@ -1,57 +1,32 @@
 import { NextApiRequest,NextApiResponse } from "next";
 import NextCors from "nextjs-cors";
 
-type Data ={
+type Data =
+   {
    jobTitle:string
    starDate:string
    point:[string,string,string,string,string]
-   link:string
-   }
-
-// let data:Data[]  =[ 
-//             {
-//             jobTitle:'Kodim 0310 Sijunjung',
-//             starDate:'12 april 2020',
-//             point:[
-//                'Distributing network needs in the office area',
-//                'Fix application problems, such as installing the operating system and other work support tools',
-//                'Help with office administration',
-//                'Retrieve existing data from a separate document and enter it into Excel',
-//                'Prepare online meeting equipment'
-//             ],
-//             link:'https://kodim.com/kodim-0310-sijunjung'
-//          },
-//          {
-//             jobTitle:'Kodim 0310 Sijunjung',
-//             starDate:'12 april 2020',
-//             point:[
-//                'Distributing network needs in the office area',
-//                'Fix application problems, such as installing the operating system and other work support tools',
-//                'Help with office administration',
-//                'Retrieve existing data from a separate document and enter it into Excel',
-//                'Prepare online meeting equipment'
-//             ],
-//             link:'https://kodim.com/kodim-0310-sijunjung'
-//          }
-//       ]
-
-
+   link:string,
+   perusahaan:string
+}
 
 export default async function handler(
    req:NextApiRequest,
-   res:NextApiResponse<Data>
+   res:NextApiResponse<Data[]>
 ){
 
    await NextCors(req, res, {
       // Options
       methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
       origin: '*',
-      optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+      optionsSuccessStatus: 200,
    });
   res.status(200).json(
+   
+      [  
          {
-            jobTitle:'Kodim 0310 Sijunjung',
-            starDate:'12 april 2020',
+            jobTitle:'IT SUPPORT',
+            starDate:'Apr 2020 - Present',
             point:[
                'Distributing network needs in the office area',
                'Fix application problems, such as installing the operating system and other work support tools',
@@ -59,6 +34,21 @@ export default async function handler(
                'Retrieve existing data from a separate document and enter it into Excel',
                'Prepare online meeting equipment'
             ],
-            link:'https://kodim.com/kodim-0310-sijunjung'
-         })
-}
+            link:'https://kodim.com/kodim-0310-sijunjung',
+            perusahaan:"Kodim 0310"
+         },
+         {
+            jobTitle:'FRONTLINE',
+            starDate:'July 2018 - Apr 2019',
+            point:[
+               'To be at the forefront of the company to meet customer needs',
+               'Calculate daily profit and match the number of goods using excel',
+               'Educate JITU PULSA membership to always be skilled in using transactions through ',
+               'Responsibility for one branch of the company',
+               'Looking for new membership'
+            ],
+            link:'https://jitupulsa.net/',
+            perusahaan:"JITU PULSA"
+         }
+      ]
+)}
