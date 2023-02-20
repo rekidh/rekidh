@@ -16,12 +16,11 @@ type DataType = {
 function Section2() {
   const [data, setData] = useState<DataType[]>([] as DataType[])
   const getData = async () => {
-      //rekidh-rekidh.vercel.app
-    await axios.get('http://localhost:3000/api/working').then(res => setData(res.data))
+    const host = window.location.href
+    await axios.get(`${host}api/working`).then(res => setData(res.data))
   }
   useEffect(()  => {
     getData()
-    console.log('di pangil')
   },[])
 
   return (
