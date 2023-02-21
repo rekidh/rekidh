@@ -8,7 +8,7 @@ import axios from 'axios'
 type DataType = {
     jobTitle:string
    starDate:string
-   point:[string,string,string,string,string]
+   point:string[]
    link:string
    perusahaan:string
 }

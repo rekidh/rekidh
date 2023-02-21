@@ -5,7 +5,7 @@ type Data =
    {
    jobTitle:string
    starDate:string
-   point:[string,string,string,string,string]
+   point:string[]
    link:string,
    perusahaan:string
 }
