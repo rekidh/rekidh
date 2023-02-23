@@ -9,7 +9,7 @@ export default function Section1() {
 
       <div className={style.text_hero} id='about'>
         <h1 >Hi, everyone I'm <span>Reki Desma Haldi</span></h1>
-        <p>I am a User Interface Designer & Front-end Developer. I design delightful products & code web templates.</p>
+        <p>I am a Front-end Developer and Fullstack Web Developer. I create attractive and responsive web with framework NexsJS</p>
       </div>
 
       <div className={style.image_rapper}>

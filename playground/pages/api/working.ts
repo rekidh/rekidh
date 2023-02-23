@@ -50,5 +50,19 @@ export default async function handler(
             link:'https://jitupulsa.net/',
             perusahaan:"JITU PULSA"
          }
+         ,
+         {
+            jobTitle:'FRONTLINE',
+            starDate:'July 2018 - Apr 2019',
+            point:[
+               'To be at the forefront of the company to meet customer needs',
+               'Calculate daily profit and match the number of goods using excel',
+               'Educate JITU PULSA membership to always be skilled in using transactions through ',
+               'Responsibility for one branch of the company',
+               'Looking for new membership'
+            ],
+            link:'https://jitupulsa.net/',
+            perusahaan:"JITU PULSA"
+         }
       ]
 )}

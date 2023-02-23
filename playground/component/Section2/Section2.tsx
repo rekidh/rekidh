@@ -21,9 +21,17 @@ function Section2() {
     await axios.get(`${host}api/working`).then(res => setData(res.data))
   }
   useEffect(()  => {
-    console.log('data sedang di panggil')
     getData()
   },[])
+  useEffect(()=>{
+    let timer = setTimeout(() => {
+      console.log(slider>=data.length-1?0:slider+1)
+     return setSlider(slider>=data.length-1?0:slider+1)
+    }, 5000)
+    return () => {
+        clearTimeout(timer);
+      };
+  })
 
 
   return (
@@ -57,9 +65,9 @@ function Section2() {
             }
             </div>
         <div className={style.dot}>
-            <span onClick={()=>{ slider<data.length-1?setSlider(slider+1):setSlider(0)}}></span>
-            <span onClick={()=>{ slider<data.length-1?setSlider(slider+1):setSlider(0)}}></span>
-            <span onClick={()=>{ slider<data.length-1?setSlider(slider+1):setSlider(0)}}></span>
+          {data.map((item,index) => (
+            <span onClick={(e)=>setSlider(index)} style={{backgroundColor:index==slider?'#fff':''}} ></span>
+          ))}
         </div>
       </div>
   )
