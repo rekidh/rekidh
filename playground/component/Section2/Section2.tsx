@@ -23,6 +23,7 @@ function Section2() {
   useEffect(()  => {
     getData()
   },[])
+
   useEffect(()=>{
     let timer = setTimeout(() => {
       console.log(slider>=data.length-1?0:slider+1)
@@ -33,36 +34,39 @@ function Section2() {
       };
   })
 
-
   return (
     <div className={style.section_2}  id='work'>
         <h1>Working Experience</h1>
         <div className={style.container}>
+
             {data.map((item,index) => (
-                <div className={`${index==slider? style.card_active :style.card_inactive}`} id={`card_${index}`} >
+                <div className={`${index==slider? style.card_active :style.card_inactive} ${style.card}`} id={`card_${index.toString()}`} >
+                  
                   <div className={style.card_title}>
                     <h1 >{item.jobTitle.toString()}</h1>
                     <p >{item.starDate.toString()}</p>
                   </div>
+
                   <ul className={style.card_list}>
-                    {
-                      item.point.map((item2) => 
+                    {item.point.map((item2,index2) => 
                         (
-                          <li>
+                          <li key={index2.toString()}>
                             <Image src={cheklist} width={22} height={22} alt='reki'/>
                             <p >{item2.toString()}</p>
                           </li>
                         )
-                      )
-                    }
+                    )}
                   </ul>
+
                   <div className={style.card_footer}>
                     <Button model='' size={{x:140,y:50}}>See Detail</Button>
                     <h1 >{item.perusahaan}</h1>
                   </div>
+                  
                 </div>
               ))
             }
+
             </div>
         <div className={style.dot}>
           {data.map((item,index) => (

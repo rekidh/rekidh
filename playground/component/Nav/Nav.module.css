@@ -26,6 +26,16 @@
       background-color: #333;
       border-radius: 10px;
    }
+   [status=active].hamburger_menu>span:first-child{
+      transform: rotate(45deg) translateX(10px) translateY(10px);
+   }
+   [status=active].hamburger_menu>span:nth-child(2){
+      transform: translateX(70px) ;
+   }
+   [status=active].hamburger_menu>span:last-child {
+      transform: rotate(-45deg) ;
+   }
+
    .nav_menu{
       display: none;
    }

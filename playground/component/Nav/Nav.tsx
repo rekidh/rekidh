@@ -2,7 +2,11 @@
 import Link from "next/link"
 import style from "./Nav.module.css"
 import Button from "../atomic/Button/Button"
+import { useState } from "react"
 export default function Nav(){
+
+   const[status, SetStatus]=useState<boolean>()
+
    return(
       <nav className={style.nav}>
          <div className={style.logo}>Rekidh</div>
@@ -16,7 +20,7 @@ export default function Nav(){
          <div className={style.container_btn}>
             <Button model="primary" size={{x:140,y:50}}> Let's Talk</Button>
          </div>
-         <div className={style.hamburger_menu}>
+         <div className={`${style.hamburger_menu} ${status?style.active:style.inactive} `}  onClick={(e)=>SetStatus(!status)}> 
             <span></span>
             <span></span>
             <span></span>
