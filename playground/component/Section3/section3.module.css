@@ -2,19 +2,21 @@
    display: flex;
    flex-direction: column;
 
+   background: transparent;
 }
 .section3{
+   position: relative;
    justify-content: center;
    margin-top: -3em;
-   background-color: #FFFFFF;
-   border-radius:60px 60px 0px 0px;
 }
 
 .header{
    gap: 3rem ;
 }
 .header>h1{
-   margin-top: 2em;
+   border-radius:60px 60px 0px 0px;
+   background: #FFFFFF;
+   padding-top: 2em;
    text-align: center;
 }
 .btn_header{
@@ -24,19 +26,32 @@
    margin: 0 2em;
 }
 .container_card{
-   margin-top: 5em;
+   padding: 5em 0 15em 0;
    align-items: center ;
    gap: 3.5em;
+   margin: 2em 5em;
 }
 .rapper{
    display: flex;
    gap: 7em;
 }
+@media screen and (max-width:700px) {
+   
+   .rapper,.container_card{
+      flex-direction: column;
+      gap: 5em;
+   }
+   
+   .container_card{
+      padding-bottom: 10em;
+   }
+
+}
 
 .bg_circle{
-   margin-top: -85em;
-   /* display: none; */
-   margin-bottom: -40em;
+   z-index: -50;
+   position: absolute;
+   top: 10em;
    height: 2247px;
    width: 2247px;
    background-image:  radial-gradient(42.06% 42.06% at 49.96% 41.94%, #00C0FD 0%, rgba(194, 200, 255, 0) 100%)

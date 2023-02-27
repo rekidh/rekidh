@@ -2,9 +2,15 @@
    
    .container_section_1{
       /* height: 40%; */
+      margin-bottom: 2em;
       overflow: hidden;
    }
-
+   .image_rapper{
+   top: -5.5em;
+   }
+   .text_hero{
+      padding-top: 1em;
+   }
    .text_hero>p{
    width: 70vw;
    height: 7em;
@@ -22,6 +28,7 @@
 } 
 
 .image_rapper,.text_hero{
+   position: relative;
    display: flex;
    justify-content: center;
    flex-direction: column;
@@ -56,7 +63,7 @@
 }
 .image_rapper>img{
    position: absolute;
-   top: 23em;
+   top: 8em;
    z-index: -1;
    width: 20em;
    height: 25em;
