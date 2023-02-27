@@ -11,13 +11,25 @@
    .nav{
       margin: 1em ;
    }
+   .nav_menu{
+      display: hidden;
+      position: absolute;
+      padding: 5em 0;
+      right: 0;
+      top: 0;
+      opacity: 0;
+      transition: all 1s ease-in-out;
+      z-index: -5;
+   }
    .hamburger_menu{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 50px;
-   height: 40px;
-   flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 40px;
+      flex-direction: column;
+      overflow: hidden;
+      z-index: 99;
    }
    .hamburger_menu>span{
       transition: all 1s ease-in-out;
@@ -27,51 +39,43 @@
       background-color: #333;
       border-radius: 10px;
    }
-   [status=active].hamburger_menu>span:first-child{
+
+   .active>span:first-child{
       background-color: #ffffff;
       transition: all 1s ease-in-out;
       transform: rotate(45deg) translateX(10px) translateY(10px);
    }
-   [status=active].hamburger_menu>span:nth-child(2){
+   .active>span:nth-child(2){
       background-color: #ffffff;
       transition: all 1s ease-in-out;
-      transform: translateX(70px) ;
+      transform: translateX(40px) ;
    }
-   [status=active].hamburger_menu>span:last-child {
+   .active>span:last-child {
       background-color: #ffffff;
       transition: all 1s ease-in-out;
       transform: rotate(-45deg) ;
    }
-
-   .nav_menu>ul{ 
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 2em;
-   }
    .nav_menu>ul>li>a{
       color: #ffffff;
    }
-   .nav_menu>ul>li:hover{
-      background-color: #333333;
+   .status{
+      display: block;
+      background-color: #333;
+      opacity: 1;
+      z-index: 5;
    }
-   [status=active].nav_menu{
-      transition: all 1s ease-in-out;
-      background: #333333;
-      right: 0;
-      top: 0;
-      padding: 5em 0;
-      position: absolute;
 
-   }
-   [status=inactive].nav_menu>ul{
-      display: none;
+   .nav_menu>ul{
+      display: flex;
+      gap: 2em ;
+      flex-direction: column;
    }
 
    .container_btn{
       display: none;
    }
 }
+
 
 .logo{
    font-weight: 800;
