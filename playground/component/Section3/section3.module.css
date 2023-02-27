@@ -21,6 +21,7 @@
    display: flex;
    justify-content: center;
    gap: 5vw;
+   margin: 0 2em;
 }
 .container_card{
    margin-top: 5em;
@@ -34,15 +35,9 @@
 
 .bg_circle{
    margin-top: -85em;
+   /* display: none; */
    margin-bottom: -40em;
    height: 2247px;
    width: 2247px;
    background-image:  radial-gradient(42.06% 42.06% at 49.96% 41.94%, #00C0FD 0%, rgba(194, 200, 255, 0) 100%)
-}
-@media screen and (max-width:768px) {
-   /* .container_card{
-        flex-direction: row;
-        overflow: scroll;
-   } */
-   
 }
