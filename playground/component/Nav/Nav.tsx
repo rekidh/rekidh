@@ -3,10 +3,8 @@ import Link from "next/link"
 import style from "./Nav.module.css"
 import Button from "../atomic/Button/Button"
 import { useState } from "react"
-interface Nav{
-   dataStatus:string;
-}
-export default function Nav(prop:Nav){
+
+export default function Nav(){
 
    const[status, SetStatus]=useState<boolean>(false)
 
